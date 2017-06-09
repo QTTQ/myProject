@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>智能社——http://www.zhinengshe.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style>
+
+    </style>
+    <script src="vue.js"></script>
+    <script src="bower_components/vue-router/dist/vue-router.min.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-default/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+</head>
+
+<body>
+    <div id="box">
+        <div>
+            <router-link to="/home">主页</router-link>
+            <router-link to="/news">新闻</router-link>
+        </div>
+        <div>
+            <router-view></router-view>
+        </div>
+          <el-radio class="radio" v-model="radio" label="1">备选项</el-radio>
+        <el-radio class="radio" v-model="radio" label="2">备选项</el-radio>
+    </div>
+
+    <script src="./VV.js"></script>
+
+
+<!--
+    <template>
+      
+    </template>-->
+
+    <!--<script>
+        export default {
+            data() {
+                return {
+                    radio: '1'
+                };
+            }
+        }
+
+    </script>-->
+
+    <!--<script>
+      
+    </script>-->
+</body>
+
+</html>
