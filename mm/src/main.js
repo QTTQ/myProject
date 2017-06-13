@@ -5,6 +5,41 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import App from './App.vue'
 
+import echarts from 'echarts'
+
+// Vue.prototype.$echarts = echarts 
+
+import Rightyjkb from './components/pages/ct-rt/Rightyjkb.vue'
+import Rightyyfx from './components/pages/ct-rt/Rightyyfx.vue'
+import Rightjzyx from './components/pages/ct-rt/Rightjzyx.vue'
+import Rightyjts from './components/pages/ct-rt/Rightyjts.vue'
+import Rightjszy from './components/pages/ct-rt/Rightjszy.vue'
+import Rightxxcxjwh from './components/pages/ct-rt/Rightxxcxjwh.vue'
+import Rightzwpg from './components/pages/ct-rt/Rightzwpg.vue'
+import Rightxtgl from './components/pages/ct-rt/Rightxtgl.vue'
+
+
+
+import VueRouter from 'vue-router'
+
+Vue.use(VueRouter)
+
+const routes = [
+  { path: '/yjkb', component: Rightyjkb },
+  { path: '/yyfx', component: Rightyyfx },
+  { path: '/jzyx', component: Rightjzyx },
+  { path: '/yjts', component: Rightyjts },
+  { path: '/jszy', component: Rightjszy },
+  { path: '/xxcxjwh', component: Rightxxcxjwh },
+  { path: '/zwpg', component: Rightzwpg },
+  { path: '/xtgl', component: Rightxtgl },
+  { path: '*', redirect: '/yjkb' }
+];
+
+const router = new VueRouter({
+  routes // （缩写）相当于 routes: routes
+})
+
 Vue.use(ElementUI)
 
 Vue.config.productionTip = false
@@ -12,6 +47,7 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  router,
   template: '<App/>',
   components: { App }
 })

@@ -14,12 +14,12 @@
         <el-col :span="18">
           <div class="grid-content bg-purple">
   
-      <content-right></content-right>
+            <content-right></content-right>
           </div>
         </el-col>
       </el-row>
   
-            <div class="footer"></div>
+      <div class="footer"></div>
     </div>
   </div>
 </template>  
@@ -42,7 +42,6 @@ export default {
   
 <!-- Add "scoped" attribute to limit CSS to this component only -->  
 <style scoped>
-
 h1,
 h2 {
   font-weight: normal;

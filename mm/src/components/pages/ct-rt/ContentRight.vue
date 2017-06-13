@@ -1,23 +1,23 @@
 <template>
   <div class="m-ct-rt">
-
+  
     <right-header></right-header>
-    <right-body></right-body>
-
+    <!--<right-body></right-body>-->
+   <router-view></router-view>
   </div>
 </template>  
   
 <script>  
 import RightHeader from './RightHeader'
-import RightBody from './RightBody'
+import RightBody from './Rightyjkb'
 
- export default {
+export default {
   name: 'm-ct-rt',
   components: {
-   
+
     RightHeader,
     RightBody
-    
+
   }
 }
 </script>  
