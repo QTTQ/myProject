@@ -3,7 +3,11 @@ var utils = require('./utils')
 var config = require('../config')
 var vueLoaderConfig = require('./vue-loader.conf')
 
+<<<<<<< HEAD
 function resolve(dir) {
+=======
+function resolve (dir) {
+>>>>>>> 3e75aee5d835678a36f4fa0e29e4d2c6eae37be2
   return path.join(__dirname, '..', dir)
 }
 
@@ -11,9 +15,12 @@ module.exports = {
   entry: {
     app: './src/main.js'
   },
+<<<<<<< HEAD
   externals: {
     "BMap": "BMap"
   },
+=======
+>>>>>>> 3e75aee5d835678a36f4fa0e29e4d2c6eae37be2
   output: {
     path: config.build.assetsRoot,
     filename: '[name].js',
@@ -40,7 +47,11 @@ module.exports = {
         loader: 'babel-loader',
         include: [resolve('src'), resolve('test')]
       },
+<<<<<<< HEAD
       {
+=======
+       {
+>>>>>>> 3e75aee5d835678a36f4fa0e29e4d2c6eae37be2
         test: /\.css$/,
         loader: 'style-loader'
       },

@@ -5,6 +5,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-default/index.css'
 import App from './App.vue'
 
+<<<<<<< HEAD
 import echarts from 'echarts'
 
 // Vue.prototype.$echarts = echarts 
@@ -40,6 +41,8 @@ const router = new VueRouter({
   routes // （缩写）相当于 routes: routes
 })
 
+=======
+>>>>>>> 3e75aee5d835678a36f4fa0e29e4d2c6eae37be2
 Vue.use(ElementUI)
 
 Vue.config.productionTip = false
@@ -47,7 +50,10 @@ Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+<<<<<<< HEAD
   router,
+=======
+>>>>>>> 3e75aee5d835678a36f4fa0e29e4d2c6eae37be2
   template: '<App/>',
   components: { App }
 })

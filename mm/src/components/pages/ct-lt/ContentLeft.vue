@@ -7,6 +7,7 @@
                 <h5>不带 icon</h5>
                 <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" theme="dark">
                     <el-submenu index="1">
+<<<<<<< HEAD
                         <template slot="title">哈尔滨</template>
                         <el-menu-item-group title="市">
                             <el-menu-item index="1-1" @click="clickTag($event)">哈尔滨</el-menu-item>
@@ -107,6 +108,23 @@
                         </el-submenu>
                     </el-submenu>
                    
+=======
+                        <template slot="title">导航一</template>
+                        <el-menu-item-group title="分组一">
+                            <el-menu-item index="1-1">选项1</el-menu-item>
+                            <el-menu-item index="1-2">选项2</el-menu-item>
+                        </el-menu-item-group>
+                        <el-menu-item-group title="分组2">
+                            <el-menu-item index="1-3">选项3</el-menu-item>
+                        </el-menu-item-group>
+                        <el-submenu index="1-4">
+                            <template slot="title">选项4</template>
+                            <el-menu-item index="1-4-1">选项1</el-menu-item>
+                        </el-submenu>
+                    </el-submenu>
+                    <el-menu-item index="2">导航二</el-menu-item>
+                    <el-menu-item index="3">导航三</el-menu-item>
+>>>>>>> 3e75aee5d835678a36f4fa0e29e4d2c6eae37be2
                 </el-menu>
             <!--</el-col>-->
             
@@ -117,6 +135,7 @@
 
 
 <script>
+<<<<<<< HEAD
 import Tag from '../../../assets/EventTag.js'
 export default {
      data:function() {
@@ -131,6 +150,11 @@ export default {
             console.log(this.cityname)
             
         },
+=======
+
+export default {
+    methods: {
+>>>>>>> 3e75aee5d835678a36f4fa0e29e4d2c6eae37be2
         handleOpen(key, keyPath) {
             console.log(key, keyPath);
         },
